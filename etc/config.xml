@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <facebookcomments>
+            <general>
+                <language>en_US</language>
+                <width>550</width>
+                <num_posts>5</num_posts>
+                <lazy_load>0</lazy_load>
+            </general>
+        </facebookcomments>
+    </default>
+</config>

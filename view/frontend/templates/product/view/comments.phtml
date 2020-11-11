@@ -1,0 +1,16 @@
+<?php
+/** @var \Magento\Catalog\Model\Product $product */
+/** @var \Hamdiko\FacebookComments\Block\Product\View\Comment $block */
+$product = $block->getProduct();
+?>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/<?php echo $block->getLang();?>/sdk.js#xfbml=1&version=v8.0" nonce="vqLo5GeS"></script>
+<div class="fb-comments"
+     data-href="<?php echo $product->getProductUrl(); ?>"
+     data-numposts="<?php echo $block->getNumPosts(); ?>"
+     data-width="<?php echo $block->getWidth(); ?>"
+     data-lazy="<?php echo $block->isLazyLoad(); ?>"
+     data-colorscheme="<?php echo $block->getColorSchema(); ?>"
+     data-order-by="<?php echo $block->getOrderBy(); ?>"
+>
+</div>

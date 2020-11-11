@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <block class="Hamdiko\FacebookComments\Block\Product\View\Comment" name="product.info.comments" as="facebook.comments"
+                   template="Hamdiko_FacebookComments::product/view/comments.phtml" group="detailed_info" ifconfig="facebookcomments/general/active">
+                <arguments>
+                    <argument name="sort_order" xsi:type="string">90</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
