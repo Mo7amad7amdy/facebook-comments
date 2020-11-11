@@ -22,7 +22,7 @@
     }
   ],
   "license": [
-    "GNU General Public License (GPL)"
+    "MIT"
   ],
   "autoload": {
     "files": [
